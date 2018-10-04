@@ -1,0 +1,35 @@
+{
+  "author" : "Kahi",
+  "commands" : [
+    {
+      "script" : "set-position.cocoascript",
+      "shortcut" : "ctrl shift i",
+      "name" : "Unify position",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.setposition"
+    },
+    {
+      "script" : "set-size.cocoascript",
+      "shortcut" : "ctrl shift o",
+      "name" : "Unify size",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.setsize"
+    }
+  ],
+  "menu" : {
+    "title" : "Unifier",
+    "items" : [
+      "com.bohemiancoding.sketch.setposition",
+      "com.bohemiancoding.sketch.setsize",
+    ]
+  },
+  "identifier" : "com.example.sketch.32ef2129-d0a0-4f5b-ab36-45883ca4c45f",
+  "version" : "1.3",
+  "description" : "Unify position and size of two selected layers oh man",
+  "authorEmail" : "kahi.cz@gmail.com",
+  "name" : "Unifier",
+}

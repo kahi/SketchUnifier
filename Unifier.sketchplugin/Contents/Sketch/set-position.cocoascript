@@ -1,0 +1,15 @@
+var onRun = function(context) {
+
+  var selectedLayers = context.selection;
+
+
+  if (selectedLayers.count() == 2){
+
+    selectedLayers.objectAtIndex(1).frame().x = selectedLayers.objectAtIndex(0).frame().x();
+    selectedLayers.objectAtIndex(1).frame().y = selectedLayers.objectAtIndex(0).frame().y();
+
+  }else{
+    context.document.showMessage('please select two layers to swap')
+  }
+
+};
